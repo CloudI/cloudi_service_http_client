@@ -10,8 +10,9 @@
    {registered, []},
    {applications, [
         cloudi_core,
-        inets,
         uuid,
+        trie,
+        inets,
         stdlib,
         kernel
         ]}]}.
