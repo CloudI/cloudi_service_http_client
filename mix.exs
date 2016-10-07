@@ -3,7 +3,7 @@ defmodule CloudIServiceHttpClient do
 
   def project do
     [app: :cloudi_service_http_client,
-     version: "1.5.3",
+     version: "1.5.4",
      language: :erlang,
      description: description,
      package: package,
@@ -11,9 +11,9 @@ defmodule CloudIServiceHttpClient do
   end
 
   defp deps do
-    [{:trie, "~> 1.5.3"},
-     {:uuid, "~> 1.5.3", hex: :uuid_erl},
-     {:cloudi_core, "~> 1.5.3"}]
+    [{:trie, "~> 1.5.4"},
+     {:uuid, "~> 1.5.4", hex: :uuid_erl},
+     {:cloudi_core, "~> 1.5.4"}]
   end
 
   defp description do
