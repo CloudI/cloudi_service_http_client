@@ -6,7 +6,7 @@ otp_release:
 before_script:
   - rebar get-deps
 script:
-  - rebar compile || echo "cowlib1 is not actively maintained"
+  - rebar compile ct suites=cloudi_service_http_client || ( cat logs/raw.log logs/ct_run*/cloudi.log && exit 1 )
 after_script:
   - rebar clean
 branches:
