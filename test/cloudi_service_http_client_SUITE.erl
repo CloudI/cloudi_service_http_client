@@ -32,18 +32,18 @@
 %%%------------------------------------------------------------------------
 
 all() ->
-    [{group, inets},
-     {group, hackney}].
+    [{group, inets}].%,
+     %{group, hackney}].
 
 groups() ->
     [{inets, [xequence],
       [t_cowboy1_client_basic_1,
        t_cowboy2_client_basic_1,
-       t_elli_client_basic_1]},
-     {hackney, [sequence],
-      [t_cowboy1_client_basic_1,
-       t_cowboy2_client_basic_1,
-       t_elli_client_basic_1]}].
+       t_elli_client_basic_1]}].%,
+     %{hackney, [sequence],
+     % [t_cowboy1_client_basic_1,
+     %  t_cowboy2_client_basic_1,
+     %  t_elli_client_basic_1]}].
 
 suite() ->
     [{ct_hooks, [cth_surefire]},
