@@ -9,6 +9,7 @@
         ]},
    {registered, []},
    {applications, [
+        hackney,
         cloudi_core,
         uuid,
         trie,
