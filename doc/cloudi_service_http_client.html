@@ -12,9 +12,9 @@
 <h1>Module cloudi_service_http_client</h1>
 <ul class="index"><li><a href="#description">Description</a></li><li><a href="#types">Data Types</a></li><li><a href="#index">Function Index</a></li><li><a href="#functions">Function Details</a></li></ul>
    <h3><a name="CloudI_HTTP_Client_Service">CloudI HTTP Client Service</a></h3>.
-<p>Copyright © 2014-2019 Michael Truog</p>
+<p>Copyright © 2014-2021 Michael Truog</p>
 
-<p><b>Version:</b> 1.8.0 Nov 28 2019 15:28:31
+<p><b>Version:</b> 2.0.2 May 27 2021 00:48:11
   ------------------------------------------------------------------------</p>
 <p><b>Behaviours:</b> <a href="deps/cloudi_core/doc/cloudi_service.html"><tt>cloudi_service</tt></a>.</p>
 <p><b>Authors:</b> Michael Truog (<a href="mailto:mjtruog at protonmail dot com"><tt>mjtruog at protonmail dot com</tt></a>).</p>
@@ -107,21 +107,25 @@
 <h3 class="function"><a name="cloudi_service_handle_request-11">cloudi_service_handle_request/11</a></h3>
 <div class="spec">
 <p><tt>cloudi_service_handle_request(RequestType, Name, Pattern, RequestInfo, Request, Timeout, Priority, TransId, Pid, State, Dispatcher) -&gt; any()</tt></p>
+<p> </p>
 </div>
 
 <h3 class="function"><a name="cloudi_service_init-4">cloudi_service_init/4</a></h3>
 <div class="spec">
 <p><tt>cloudi_service_init(Args, Prefix, Timeout, Dispatcher) -&gt; any()</tt></p>
+<p> </p>
 </div>
 
 <h3 class="function"><a name="cloudi_service_terminate-3">cloudi_service_terminate/3</a></h3>
 <div class="spec">
 <p><tt>cloudi_service_terminate(Reason, Timeout, State) -&gt; any()</tt></p>
+<p> </p>
 </div>
 
 <h3 class="function"><a name="delete-4">delete/4</a></h3>
 <div class="spec">
 <p><tt>delete(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_DELETE_request.">A HTTP DELETE request.</a></h4>
 </p>
@@ -129,6 +133,7 @@
 <h3 class="function"><a name="delete-5">delete/5</a></h3>
 <div class="spec">
 <p><tt>delete(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_DELETE_request_with_a_timeout.">A HTTP DELETE request with a timeout.</a></h4>
 </p>
@@ -136,6 +141,7 @@
 <h3 class="function"><a name="delete_async-4">delete_async/4</a></h3>
 <div class="spec">
 <p><tt>delete_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_DELETE_async_request.">A HTTP DELETE async request.</a></h4>
 </p>
@@ -143,6 +149,7 @@
 <h3 class="function"><a name="delete_async-5">delete_async/5</a></h3>
 <div class="spec">
 <p><tt>delete_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_DELETE_async_request_with_a_timeout.">A HTTP DELETE async request with a timeout.</a></h4>
 </p>
@@ -150,6 +157,7 @@
 <h3 class="function"><a name="get-4">get/4</a></h3>
 <div class="spec">
 <p><tt>get(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_GET_request.">A HTTP GET request.</a></h4>
 </p>
@@ -157,6 +165,7 @@
 <h3 class="function"><a name="get-5">get/5</a></h3>
 <div class="spec">
 <p><tt>get(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_GET_request_with_a_timeout.">A HTTP GET request with a timeout.</a></h4>
 </p>
@@ -164,6 +173,7 @@
 <h3 class="function"><a name="get_async-4">get_async/4</a></h3>
 <div class="spec">
 <p><tt>get_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_GET_async_request.">A HTTP GET async request.</a></h4>
 </p>
@@ -171,6 +181,7 @@
 <h3 class="function"><a name="get_async-5">get_async/5</a></h3>
 <div class="spec">
 <p><tt>get_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_GET_async_request_with_a_timeout.">A HTTP GET async request with a timeout.</a></h4>
 </p>
@@ -178,6 +189,7 @@
 <h3 class="function"><a name="head-4">head/4</a></h3>
 <div class="spec">
 <p><tt>head(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_HEAD_request.">A HTTP HEAD request.</a></h4>
 </p>
@@ -185,6 +197,7 @@
 <h3 class="function"><a name="head-5">head/5</a></h3>
 <div class="spec">
 <p><tt>head(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_HEAD_request_with_a_timeout.">A HTTP HEAD request with a timeout.</a></h4>
 </p>
@@ -192,6 +205,7 @@
 <h3 class="function"><a name="head_async-4">head_async/4</a></h3>
 <div class="spec">
 <p><tt>head_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_HEAD_async_request.">A HTTP HEAD async request.</a></h4>
 </p>
@@ -199,6 +213,7 @@
 <h3 class="function"><a name="head_async-5">head_async/5</a></h3>
 <div class="spec">
 <p><tt>head_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_HEAD_async_request_with_a_timeout.">A HTTP HEAD async request with a timeout.</a></h4>
 </p>
@@ -206,6 +221,7 @@
 <h3 class="function"><a name="options-4">options/4</a></h3>
 <div class="spec">
 <p><tt>options(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_OPTIONS_request.">A HTTP OPTIONS request.</a></h4>
 </p>
@@ -213,6 +229,7 @@
 <h3 class="function"><a name="options-5">options/5</a></h3>
 <div class="spec">
 <p><tt>options(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_OPTIONS_request_with_a_timeout.">A HTTP OPTIONS request with a timeout.</a></h4>
 </p>
@@ -220,6 +237,7 @@
 <h3 class="function"><a name="options_async-4">options_async/4</a></h3>
 <div class="spec">
 <p><tt>options_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_OPTIONS_async_request.">A HTTP OPTIONS async request.</a></h4>
 </p>
@@ -227,6 +245,7 @@
 <h3 class="function"><a name="options_async-5">options_async/5</a></h3>
 <div class="spec">
 <p><tt>options_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_OPTIONS_async_request_with_a_timeout.">A HTTP OPTIONS async request with a timeout.</a></h4>
 </p>
@@ -234,6 +253,7 @@
 <h3 class="function"><a name="post-4">post/4</a></h3>
 <div class="spec">
 <p><tt>post(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_POST_request.">A HTTP POST request.</a></h4>
 </p>
@@ -241,6 +261,7 @@
 <h3 class="function"><a name="post-5">post/5</a></h3>
 <div class="spec">
 <p><tt>post(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_POST_request_with_a_timeout.">A HTTP POST request with a timeout.</a></h4>
 </p>
@@ -248,6 +269,7 @@
 <h3 class="function"><a name="post_async-4">post_async/4</a></h3>
 <div class="spec">
 <p><tt>post_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_POST_async_request.">A HTTP POST async request.</a></h4>
 </p>
@@ -255,6 +277,7 @@
 <h3 class="function"><a name="post_async-5">post_async/5</a></h3>
 <div class="spec">
 <p><tt>post_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_POST_async_request_with_a_timeout.">A HTTP POST async request with a timeout.</a></h4>
 </p>
@@ -262,6 +285,7 @@
 <h3 class="function"><a name="put-4">put/4</a></h3>
 <div class="spec">
 <p><tt>put(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_PUT_request.">A HTTP PUT request.</a></h4>
 </p>
@@ -269,6 +293,7 @@
 <h3 class="function"><a name="put-5">put/5</a></h3>
 <div class="spec">
 <p><tt>put(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_PUT_request_with_a_timeout.">A HTTP PUT request with a timeout.</a></h4>
 </p>
@@ -276,6 +301,7 @@
 <h3 class="function"><a name="put_async-4">put_async/4</a></h3>
 <div class="spec">
 <p><tt>put_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_PUT_async_request.">A HTTP PUT async request.</a></h4>
 </p>
@@ -283,6 +309,7 @@
 <h3 class="function"><a name="put_async-5">put_async/5</a></h3>
 <div class="spec">
 <p><tt>put_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_PUT_async_request_with_a_timeout.">A HTTP PUT async request with a timeout.</a></h4>
 </p>
@@ -290,6 +317,7 @@
 <h3 class="function"><a name="trace-4">trace/4</a></h3>
 <div class="spec">
 <p><tt>trace(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_TRACE_request.">A HTTP TRACE request.</a></h4>
 </p>
@@ -297,6 +325,7 @@
 <h3 class="function"><a name="trace-5">trace/5</a></h3>
 <div class="spec">
 <p><tt>trace(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="#type-headers">headers()</a>, binary()} | {error, any()}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_TRACE_request_with_a_timeout.">A HTTP TRACE request with a timeout.</a></h4>
 </p>
@@ -304,6 +333,7 @@
 <h3 class="function"><a name="trace_async-4">trace_async/4</a></h3>
 <div class="spec">
 <p><tt>trace_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary()) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_TRACE_async_request.">A HTTP TRACE async request.</a></h4>
 </p>
@@ -311,6 +341,7 @@
 <h3 class="function"><a name="trace_async-5">trace_async/5</a></h3>
 <div class="spec">
 <p><tt>trace_async(Agent::<a href="#type-agent">agent()</a>, Prefix::<a href="#type-service_name">service_name()</a>, RequestInfo::<a href="#type-headers">headers()</a>, Request::binary(), Timeout::<a href="#type-timeout_milliseconds">timeout_milliseconds()</a>) -&gt; {{ok, <a href="deps/cloudi_core/doc/cloudi.html#type-trans_id">cloudi:trans_id()</a>} | {error, <a href="deps/cloudi_core/doc/cloudi.html#type-error_reason">cloudi:error_reason()</a>}, NewAgent::<a href="#type-agent">agent()</a>}</tt><br></p>
+<p> </p>
 </div><p>
   <h4><a name="A_HTTP_TRACE_async_request_with_a_timeout.">A HTTP TRACE async request with a timeout.</a></h4>
 </p>

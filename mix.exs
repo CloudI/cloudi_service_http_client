@@ -6,7 +6,7 @@ defmodule CloudIServiceHttpClient do
 
   def project do
     [app: :cloudi_service_http_client,
-     version: "2.0.1",
+     version: "2.0.2",
      language: :erlang,
      erlc_options: [
        :debug_info,
@@ -29,9 +29,9 @@ defmodule CloudIServiceHttpClient do
   end
 
   defp deps do
-    [{:trie, "~> 2.0.1"},
-     {:uuid, "~> 2.0.1", hex: :uuid_erl},
-     {:cloudi_core, "~> 2.0.1"}]
+    [{:trie, "~> 2.0.2"},
+     {:uuid, "~> 2.0.2", hex: :uuid_erl},
+     {:cloudi_core, "~> 2.0.2"}]
   end
 
   defp description do
@@ -39,7 +39,7 @@ defmodule CloudIServiceHttpClient do
   end
 
   defp package do
-    [files: ~w(src doc rebar.config README.markdown LICENSE),
+    [files: ~w(src doc test rebar.config README.markdown LICENSE),
      maintainers: ["Michael Truog"],
      licenses: ["MIT"],
      links: %{"Website" => "https://cloudi.org",
