@@ -6,7 +6,7 @@ defmodule CloudIServiceHttpClient do
 
   def project do
     [app: :cloudi_service_http_client,
-     version: "2.0.5",
+     version: "2.0.6",
      language: :erlang,
      erlc_options: [
        :deterministic,
@@ -21,9 +21,9 @@ defmodule CloudIServiceHttpClient do
   end
 
   defp deps do
-    [{:trie, ">= 2.0.5"},
-     {:uuid, ">= 2.0.5", [hex: :uuid_erl]},
-     {:cloudi_core, ">= 2.0.5"}]
+    [{:trie, ">= 2.0.6"},
+     {:uuid, ">= 2.0.6", [hex: :uuid_erl]},
+     {:cloudi_core, ">= 2.0.6"}]
   end
 
   defp description do
